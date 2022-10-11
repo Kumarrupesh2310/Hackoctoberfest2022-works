@@ -59,5 +59,3 @@ for i in range(len(arr)):
 arr = [5, 4, 7, 2, 11]
 treeins(arr)
 inorderRec(root)
-
-# This code is contributed by shinjanpatra
