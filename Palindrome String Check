@@ -1,0 +1,41 @@
+
+  import java.util.*;
+
+public class JavaBasics{
+  
+  
+   public static boolean isPalindrome(String str){
+       int start = 0;
+       int end = str.length()-1;
+
+       while(start<=end){
+        if(str.charAt(start) != str.charAt(end)){
+
+          System.out.print("Not palindrome");
+          return false;
+
+        }
+        if(str.charAt(start) == ' ' || str.charAt(end ) == ' '){
+          start = start+2;
+          end = end-2;
+        }
+        else{
+          start++;
+          end--;
+        
+        }
+       }
+       System.out.println("Is Palimdrome");
+       return true;
+   }
+
+
+
+  
+  public static void main(String args[]){
+
+    String str = "don nod";  // you can Even CHECK LONG STRING HAVING SPACE
+    isPalindrome(str);
+
+  }
+}
